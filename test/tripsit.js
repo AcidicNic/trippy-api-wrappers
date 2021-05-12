@@ -54,6 +54,20 @@ describe("tripsit-api", () => {
     });
   });
 
-  
+  it("should get valid [/api/tripsit/getAllDrugNamesByCategory]", () =>{
+    return tripsitAPI.getAllDrugNamesByCategory("psychedelic")
+    .then( (data) => {
+      assert.equal(typeof data, 'object');
+    });
+  });
+
+  it("should get invalid [/api/tripsit/getAllDrugNamesByCategory]", () =>{
+    return tripsitAPI.getAllDrugNamesByCategory("notacategory")
+    .then( (data) => {
+      assert.property(data, 'err');
+      assert.equal(data.err, true);
+      assert.property(data, 'msg');
+    });
+  });
 
 });
