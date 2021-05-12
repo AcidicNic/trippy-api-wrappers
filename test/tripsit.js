@@ -47,4 +47,13 @@ describe("tripsit-api", () => {
     });
   });
 
+  it("should get [/api/tripsit/getAllDrugNames]", () =>{
+    return tripsitAPI.getAllDrugNames()
+    .then( (data) => {
+      assert.equal(typeof data, 'object');
+    });
+  });
+
+  
+
 });
