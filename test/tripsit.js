@@ -70,4 +70,11 @@ describe("tripsit-api", () => {
     });
   });
 
+  it("should get [/api/tripsit/getAllDrugs]", () =>{
+    return tripsitAPI.getAllDrugs()
+    .then( (data) => {
+      assert.equal(typeof data, 'object');
+    });
+  });
+
 });
