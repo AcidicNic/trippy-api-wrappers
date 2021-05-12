@@ -77,4 +77,11 @@ describe("tripsit-api", () => {
     });
   });
 
+  it("should get [/api/tripsit/getAllCategories]", () =>{
+    return tripsitAPI.getAllCategories()
+    .then( (data) => {
+      assert.equal(typeof data, 'object');
+    });
+  });
+
 });
