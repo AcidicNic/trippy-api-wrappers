@@ -136,7 +136,7 @@ Returns an array of strings. This array includes every drug name that fits the g
 ```
 
 #### getAllDrugs()
-Returns an array of every single drug. Each drug is in the same format as [`getDrug()`](https://github.com/AcidicNic/tripsit-api#getdrug(drugname)).
+Returns an array of every single drug. Each drug is in the same format as [`getDrug()`](https://github.com/AcidicNic/tripsit-api#getdrugdrugname).
 ```
 [
   {drug object},
@@ -158,7 +158,7 @@ Returns a list of all categories.
 ```
 
 #### getAllDrugAliases()
-Returns an array of strings. This array includes all drug names and aliases. Aliases are valid inputs for [`getDrug()`](https://github.com/AcidicNic/tripsit-api#getdrug(drugname)) and [`getInteraction()`](https://github.com/AcidicNic/tripsit-api#getinteraction(druga,-drugb)).
+Returns an array of strings. This array includes all drug names and aliases. Aliases are valid inputs for [`getDrug()`](https://github.com/AcidicNic/tripsit-api#getdrugdrugname) and [`getInteraction()`](https://github.com/AcidicNic/tripsit-api#getinteractiondruga-drugb).
 ```
 [
   "name",
