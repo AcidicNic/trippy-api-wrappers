@@ -84,4 +84,11 @@ describe("tripsit-api", () => {
     });
   });
 
+  it("should get [/api/tripsit/getAllDrugAliases]", () =>{
+    return tripsitAPI.getAllDrugAliases()
+    .then( (data) => {
+      assert.equal(typeof data, 'object');
+    });
+  });
+
 });
